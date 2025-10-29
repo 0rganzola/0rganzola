@@ -230,7 +230,6 @@
     height: auto;
     padding:10px;
     transform: skewX(0deg);
-    height: auto;
     overflow: hidden;
   }
   
@@ -349,13 +348,15 @@ p{
   justify-content: center;
 }
 .screenshots img{
-  max-width:60vh;
   
   margin:5px;
   border-radius: 20px;
   border-width: 3px;
   border-style:solid;
   border-color: white;
+  width:50vh;
+  height: 100%;
+  max-width: 90%;
 }
 
 .mutatext {
