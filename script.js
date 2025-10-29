@@ -2,10 +2,10 @@
 
 let sidenavHTML =
    '<div class="sidenav">' +
-            '<a href="games.html"><logo><img src="images/logo.png" alt="Logo"></logo>' +
+            '<a href="index.html"><logo><img src="images/logo.png" alt="Logo"></logo>' +
             '<logotext>organzola</logotext></a>' +
             
-            '<a href="games.html"><navtext>games</navtext></a>'+
+            '<a href="index.html"><navtext>games</navtext></a>'+
             //'<a href="art.html"><navtext>art</navtext></a>'+
             //'<a href="blog.html"><navtext>blog</navtext></a>'+
             '<a href="about.html"><navtext>about</navtext></a>'+

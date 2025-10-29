@@ -2,74 +2,35 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <title>
-            organzola (Drew Shapiro)
+            Games
         </title>
-        <style>
-        body {
-            background-image: url('https://necessarydisorder.wordpress.com/wp-content/uploads/2017/11/tuto4.gif?w=982');
-            background-size: 1300px;
-            background-color: #fe2640ff;
-            background-blend-mode: lighten;
-            /* background-size: cover; */
-            position: absolute;
-            /* background: #000000; */
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        container {
-            position:absolute;
-            margin: 0 auto;
-            height: 500px;
-            width:700px;
-            top:50%;
-            left:50%;
-            transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0.671);
-            /* border-radius: 20px; */
-            outline-color:rgb(0, 0, 0);
-            outline-width: 10px;
-            outline-style:solid;
-        }
-
-        img{
-            position:absolute;
-            margin:0 auto;
-            top:20%;
-            left:45%;
-            transform: translate(-45%, -20%);
-            width:250px;
-            height:250px;
-            aspect-ratio: 1;
-            /* filter:drop-shadow(0px 0px 300px white); */
-        }
-        .parent-container{
-            position:absolute;
-            margin: 0 auto;
-            height: 500px;
-            width:700px;
-            top:50%;
-            left:50%;
-            background: transparent;
-            transform: translate(-47.5%, -47%);
-            /* border-radius: 20px; */
-            outline-color:rgba(0, 0, 0, 0.64);
-            /* background: black; */
-            outline-width: 20px;
-            outline-style:solid;
-        }
-        </style> 
     </head>
     <body>
-        
-        <container>
-        <div class="parent-container"></div>
-        <img src="images/logo.png">
-        <a href="games.html">games</a>
-        </container>
+        <div id="nav"></div>
+        <!-- Page content -->
+        <div class="main">
+            <div class="section-header">GAMES</div>
+            <div class="game">
+                <a  href="mutagen.html">
+                <img src="images/mutagen.jpg" alt="MUTAGEN">
+                <div class="bottom-left">MUTAGEN</div>
+            </div> 
+            <div class="game">
+                <a  href="jumponhead.html">
+                <img src="images/jumponheadscreen.jpg" alt="JUMP ON HEAD">
+                <div class="bottom-left">JUMP ON HEAD</div>
+            </div> 
+            <div class="game">
+                <a  href="molarmayhem.html">
+                <img src="images/molar mayhem.gif" alt="Molar Mayhem">
+                <div class="bottom-left">Molar Mayhem</div>
+            </div>
+            <div>
+                <a href="https://organzola.itch.io" style="width:100%; float:right; font-size: 40px; display:block; margin:auto; text-align: center;margin-bottom:20px;margin-top:40px;"> more games!</a>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
