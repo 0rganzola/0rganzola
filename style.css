@@ -7,10 +7,14 @@
   font-family: outfit;
   src: url(fonts/Outfit-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: time;
+  src: url(fonts/TimeandSpace-Regular.ttf);
+}
 
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 32vw; /* Set the width of the sidebar */
+  width: 37vw; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -18,20 +22,27 @@
   background-color: #fe2640ff;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
-  transform: skewX(-3deg) translateX(-10%);
+  transform: skewX(-3deg) translateX(-20%);
 }
 
+.yt-embed iframe{
+  aspect-ratio: 16/9;
+  width:50%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
 /* The navigation menu links */
 .sidenav navtext {
-  margin-left: 180px;
+  margin-left: 3000px;
   margin-right:50px;
   text-decoration: none;
   font-size: 40px;
   color: #000000;
   display: block;
   font-family: TiltWarp;
+  text-align: right;
   float:right;
-  text-align: left;
 }
 
 .sidenav a{
@@ -70,7 +81,7 @@
   position: absolute;
   bottom: 10px;
   right: 40px;
-  height: 110px;
+  height: 100px;
 }
 
 .sidenav logo img{
@@ -87,11 +98,12 @@
 .main {
   margin-left: 30vw; /* Same as the width of the sidebar */
   padding: 0px 10px;
+  font-family: outfit;
 }
 
 .game{
     width:90%;
-    height:280px;
+    height:300px;
     margin: 20px;
     margin-right:40px;
     border-top-left-radius: 60px;
@@ -150,67 +162,209 @@
   /* text-shadow: black 1px 0 10px; */
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-
-
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 800px) {
-  .sidenav {
+@media (max-width: 800px) or (max-device-width: 800px){
+ .sidenav {
     width: 100%;
     height: auto;
     padding:10px;
     transform: skewX(0deg);
     height: auto;
+    overflow: hidden;
   }
   
   .sidenav logotext{
-    font-size:0px;
+    display: none;
   }
   .sidenav navtext {
     float: left;
     top:0;
     text-align: center;
     margin:auto;
-    margin-left:10px;
+    margin-left:20px;
     transform: skewX(-3deg);
-    font-size:min(20em, 6vw);
-    margin-top:5px;
+    font-size:30px;
+    margin-top:0px;
+    overflow: hidden;
   }
 
   .sidenav logo img{
     float:left;
-    width:50px;
-    height:50px;
+    width:30px;
+    height:30px;
     margin-left:auto;
     margin-right:auto;
+    margin-top:5px;
+    
     transform:skewX(0deg);
-    margin-right:10px;
   }
   .sidenav socials{
     float:right;
     top:0;
-    height:100px;
+    height:80px;
     bottom:0;
     right:0;
     transform: scale(0.7);
-    margin-right:10px;
-    padding-left:20px;
+    margin-right:20px;
+    margin-left:20px;
   }
   .main{
-    margin-left: 0%;
+    margin-left: 0px;
+    margin-top:100px;
+    padding: 0px 0px;
+    width:100%;
   }
   .game{
     margin-right:20px;
   }
+  .section-header{
+    display:none;
+  }
 }
 
+.wide{
+  margin:0px;
+  padding:0px;
+  .sidenav {
+    width: 100%;
+    height: auto;
+    padding:10px;
+    transform: skewX(0deg);
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .sidenav logotext{
+    display: none;
+  }
+  .sidenav navtext {
+    float: left;
+    top:0;
+    text-align: center;
+    margin:auto;
+    margin-left:20px;
+    transform: skewX(-3deg);
+    font-size:30px;
+    margin-top:0px;
+    overflow: hidden;
+  }
+
+  .sidenav logo img{
+    float:left;
+    width:30px;
+    height:30px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5px;
+    
+    transform:skewX(0deg);
+  }
+  .sidenav socials{
+    float:right;
+    top:0;
+    height:80px;
+    bottom:0;
+    right:0;
+    transform: scale(0.7);
+    margin-right:20px;
+    margin-left:20px;
+  }
+  .main{
+    margin: 0px;
+    margin-top:100px;
+    padding:0px;
+    width:100%;
+  }
+  .game{
+    margin-right:20px;
+  }
+  .section-header{
+    display:none;
+  }
+  overflow-x:hidden;
+}
+
+.gamedesc {
+  text-align: center;
+  width: 70%;
+  margin:auto;
+  font-size: 20px;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
 
 p{
   font-family: outfit;
   font-size:min(10em, 2vw);
+  width:90%;
+  height:fit-content;
+  margin:15px;
 }
 
+.gameheader {
+  width:100%;
+  height:500px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.274);
+  object-fit: contain;
+  background-size:cover;
+  /* overflow:hidden; */
+  margin: 0px;
+  offset: 0px;
+  padding:0px;
+}
+
+.gameheader iframe{
+  float:left;
+  margin-top:8%;
+  margin-left:20px;
+  border-radius: 20px;
+  filter:drop-shadow(black 10px 10px 5px);
+}
+.gameheader p{
+  float:left;
+  margin:50px;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.613);
+  border-radius: 20px;
+  padding:30px;
+  width:35%;
+  filter:drop-shadow(black 10px 10px 5px);
+}
 .gameheader img{
-  width: 10px;
-  object-fit:contain;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  z-index: -1;
+  position:absolute;
+}
+.gamelogo img{
+  position:absolute;
+  top:10px;
+}
+.screenshots{
+  margin:auto;
+  width:90%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.screenshots img{
+  max-width:60vh;
+  
+  margin:5px;
+  border-radius: 20px;
+  border-width: 3px;
+  border-style:solid;
+  border-color: white;
+}
+
+.mutatext {
+  font-family: time;
+  color:white; font-size:20px;
+  padding:3%;
+  padding-left:6%;
+  padding-right:6%;
+  line-height: 30px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.758);
+  text-align: center;
 }
