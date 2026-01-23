@@ -12,7 +12,7 @@ let sidenavHTML =
             '<socials>'+
             '<a href="https://bsky.app/profile/organzola.games"><img src="images/bsky.png" alt="Bluesky" style="width:45px;height:45px;margin-right:20px;"></a>'+
             //'<a href="https://www.linkedin.com/in/drew-shapiro-949604272/"><img src="images/linkedin.png" alt="LinkedIn" style="width:50px;height:50px;"></a>'+
-            '<a href="mailto:drewshap@gmail.com"><img src="images/at.png" alt="E-Mail" style="width:45px;height:45px;padding-left:5px;"></a>'+
+            '<a href="mailto:drew@organzola.games"><img src="images/at.png" alt="E-Mail" style="width:45px;height:45px;padding-left:5px;"></a>'+
             '</socials>'+
         '</div>';
 
