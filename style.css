@@ -43,6 +43,7 @@
   font-family: TiltWarp;
   text-align: right;
   float:right;
+  transition: 0.1s;
 }
 
 .sidenav a{
@@ -64,17 +65,19 @@
   transform:skewX(3deg);
 }
 
-@keyframes moveright {
+/* @keyframes moveright {
     100%{
         transform:translateX(10px);
         color: #f1f1f1;
     }
-}
+} */
 
 /* When you mouse over the navigation links, change their color */
 .sidenav navtext:hover {
-  animation: moveright .1s ease-in-out;
-  animation-fill-mode: forwards;
+  /* animation: moveright .1s ease-in-out;
+  animation-fill-mode: forwards; */
+  transform:translateX(20px);
+  color: #f1f1f1;
 }
 
 .sidenav socials {
@@ -125,11 +128,15 @@
     display: inline-flexbox;
     margin-bottom:30px;
     float:right;
+    transition:0.2s;
 }
 
 .game:hover {
-  animation: gamehover .2s ease-in-out;
-  animation-fill-mode: forwards;
+  transform:translateY(-5px);
+  outline-color: #fe2640ff;
+  box-shadow: 20px 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 25%, rgba(0, 0, 0, 0.6) 100%);
+
 }
 
 .game img{
@@ -138,16 +145,13 @@
   object-fit: cover;
   z-index: -1;
   position: relative;
+  transition: 0.2s;
 }
 
-@keyframes gamehover{
-    100%{
-        transform:translateY(-5px);
-        outline-color: #fe2640ff;
-        box-shadow: 20px 30px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 25%, rgba(0, 0, 0, 0.6) 100%);
-    }
+.game img:hover {
+  transform: scale(1.05,1.05);
 }
+
 .section-header{
   font-family: TiltWarp;
   font-size: 60px;
@@ -352,8 +356,8 @@ p{
   top:10px;
 }
 .screenshots{
-  margin:auto;
-  width:90%;
+  
+  width:100%;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -368,7 +372,13 @@ p{
   width:50vh;
   height: 100%;
   max-width: 90%;
+  transition: .4s;
 }
+
+/* .screenshots img:hover
+{
+  transform:scale(1.5,1.5);
+} */
 
 .mutatext {
   font-family: time;
@@ -379,4 +389,14 @@ p{
   line-height: 35px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.758);
   text-align: center;
+}
+
+.mutatext a {
+  color:white;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.mutatext a:hover{
+  transform: scale(1.1,1.1);
 }
