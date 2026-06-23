@@ -92,6 +92,11 @@
   aspect-ratio: 1;
   float:right;
   margin-right:35px;
+  -webkit-transition: all .15s ease-out;
+}
+
+.sidenav logo img:active{
+  -webkit-transform: scale(1.1,.9);
 }
 
 /* Style page content */
@@ -195,7 +200,7 @@
     margin-left:auto;
     margin-right:auto;
     margin-top:5px;
-    
+    -webkit-transition: all .15s ease-out;
     transform:skewX(0deg);
   }
   .sidenav socials{
@@ -257,6 +262,9 @@
     margin-top:5px;
     
     transform:skewX(0deg);
+  }
+  .sidenav logo img:active{
+  -webkit-transform: scale(1.1,.9);
   }
   .sidenav socials{
     float:right;

@@ -2,8 +2,8 @@
 
 let sidenavHTML =
    '<div class="sidenav">' +
-            '<a href="index.html"><logo><img src="images/logo.png" alt="Logo"></logo>' +
-            '<logotext>organzola</logotext></a>' +
+            '<logo><img src="images/logo.png" alt="Logo"></logo>' +
+            '<logotext>organzola</logotext>' +
             
             '<a href="index.html"><navtext>games</navtext></a>'+
             //'<a href="art.html"><navtext>art</navtext></a>'+
