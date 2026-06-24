@@ -9,6 +9,7 @@ let sidenavHTML =
             //'<a href="art.html"><navtext>art</navtext></a>'+
             //'<a href="blog.html"><navtext>blog</navtext></a>'+
             '<a href="about.html"><navtext>about</navtext></a>'+
+            '<a href="press/build/index.html"><navtext>press</navtext></a>'+
             '<socials>'+
             '<a href="https://bsky.app/profile/organzola.games"><img src="images/bsky.png" alt="Bluesky" style="width:45px;height:45px;margin-right:20px;"></a>'+
             //'<a href="https://www.linkedin.com/in/drew-shapiro-949604272/"><img src="images/linkedin.png" alt="LinkedIn" style="width:50px;height:50px;"></a>'+

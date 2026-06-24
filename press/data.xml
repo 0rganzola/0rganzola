@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<company>
+  <title>organzola</title>
+  <based-in>New York, NY</based-in>
+  <founding-date></founding-date>
+  <website>https://organzola.games</website>
+  <press-contact>
+    drew@organzola.games
+  </press-contact>
+
+  <!-- Google analytics ID: -->
+  <analytics></analytics>
+
+  <socials>
+    <social>
+      <name>Bluesky</name>
+      <link>
+        https://bsky.app/profile/organzola.games
+      </link>
+    </social>
+  </socials>
+
+  <description>organzola is the game studio of Drew Shapiro. Its goal is to make weird and wonderful games.</description>
+
+  <!-- Choose between a single block: -->
+  <history>Drew Shapiro started learning game development during the pandemic, when he should have been starting college. He ended up switching his major to Game Design at Pratt Institute, and, in his junior year, started work on MUTAGEN as his capstone project. After graduating with his BFA in Game Design, the game was accepted into the NYU Game Center Incubator.</history>
+
+  <!-- Or multiple blocks: -->
+  <!--
+  <histories>
+    <history>
+      <header></header>
+      <text></text>
+    </history>
+  </histories>
+  -->
+
+
+  <awards>
+    <award>
+      <description>NYU Game Center Incubator</description>
+      <info>2025-26</info>
+    </award>
+    <award>
+      <description>Winner</description>
+      <info>GMTK Game Jam 2023</info>
+    </award>
+    <award>
+      <description>#1 Creativity</description>
+      <info>GMTK Game Jam 2023</info>
+    </award>
+  </awards>
+
+  <credits>
+    <credit>
+      <person>Drew Shapiro</person>
+      <role>Owner</role>
+
+      <!-- Optional: -->
+      <website>https://organzola.games/about</website>
+    </credit>
+  </credits>
+
+  <contacts>
+    <contact>
+      <name>Drew Shapiro</name>
+
+      <!-- Pick one: -->
+      <mail>drew@organzola.games</mail>
+      <link></link>
+    </contact>
+  </contacts>
+</company>
