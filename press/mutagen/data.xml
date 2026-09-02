@@ -12,6 +12,10 @@
       <name>Steam</name>
       <link>https://store.steampowered.com/app/3507690/MUTAGEN/</link>
     </platform>
+    <platform>
+      <name>Demo (Steam)</name>
+      <link>https://store.steampowered.com/app/4661250/MUTAGEN_Demo/</link>
+    </platform>
   </platforms>
 
   <prices>
@@ -54,11 +58,11 @@
 
   <trailers>
     <trailer>
-      <name>Teaser Trailer</name>
+      <name>Gameplay Trailer</name>
 
       <!-- Pick one: -->
       <youtube>
-        QoIoKsiIkEk
+        uESzSmFeYdQ
       </youtube>
     </trailer>
   </trailers>
@@ -67,6 +71,9 @@
   <widgets>
     <steam>
       3507690
+    </steam>
+    <steam>
+      4661250
     </steam>
   </widgets>
 
