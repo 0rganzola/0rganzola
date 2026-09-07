@@ -242,6 +242,12 @@
   .about-panel{
     font-size:40px;
   }
+  .game{
+    width:95%;
+  }
+  .bottom-left{
+    font-size:70px;
+  }
   .sidenav logotext{
     display: none;
   }
