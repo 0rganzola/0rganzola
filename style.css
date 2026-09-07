@@ -14,15 +14,15 @@
 
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 37vw; /* Set the width of the sidebar */
+  width: 37%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
+  z-index: 10; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #fe2640ff;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
-  transform: skewX(-3deg) translateX(-20%);
+  transform: skewX(-3deg) translateX(-30%);
 }
 
 .yt-embed iframe{
@@ -76,8 +76,9 @@
 .sidenav navtext:hover {
   /* animation: moveright .1s ease-in-out;
   animation-fill-mode: forwards; */
-  transform:translateX(20px);
+  transform:translateX(20px) translateY(-4px);
   color: #f1f1f1;
+  filter:drop-shadow(black -4px 4px 0px);
 }
 
 .sidenav socials {
@@ -89,11 +90,12 @@
 
 .sidenav socials img{
   transition: 0.2s;
+  filter: invert(100%);
 }
 
 .sidenav socials img:hover{
   transform: translateY(-2.5px) scale(1.2,1.2);
-  filter:drop-shadow(0px 5px 0px black);
+  filter: invert(0%)drop-shadow(0px 5px 0px black);
 }
 
 .sidenav logo img{
@@ -113,7 +115,7 @@
 
 /* Style page content */
 .main {
-  margin-left: 30vw; /* Same as the width of the sidebar */
+  margin-left: 20vw; /* Same as the width of the sidebar */
   padding: 0px 10px;
   font-family: outfit;
 }
@@ -135,10 +137,19 @@
     height:300px;
   }
 }
+.about-panel{
+  float:left;
+  background-color: rgb(53, 47, 47);
+  padding:2%;
+  border-radius: 10px;
+  width:fit-content;
+  margin:10px;
+  font-size:20px;
+}
 
 .game{
     animation: slide .2s ease-in-out forwards;
-    width:90%;
+    width:80%;
     height:0px;
     margin: 20px;
     margin-right:40px;
@@ -185,10 +196,19 @@
 .section-header{
   font-family: TiltWarp;
   font-size: 60px;
+  text-align: left;
   color: black;
-  margin-left:15px;
+  width:100%;
+  top:0;
   float:right;
+  right:0;
+  padding-right:50px;
   font-style: italic;
+  position: fixed;
+  z-index: 9;
+  background: linear-gradient(180deg,#1c1519 0%, rgba(255, 255, 255, 0) 100%);
+  text-align: right;
+  pointer-events: none;
 }
 
 .bottom-left {
@@ -201,19 +221,27 @@
   pointer-events: none;
   /* text-shadow: black 1px 0 10px; */
 }
-
+.about-text{
+  font-size:25px;color: rgb(216, 209, 203); margin: 10%; margin-top:3%; font-size: 25px; width:70%;
+}
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media (max-width: 800px) or (max-device-width: 800px){
  .sidenav {
     width: 100%;
     height: auto;
-    padding:10px;
+    padding:20px;
     transform: skewX(0deg);
     height: auto;
     overflow: hidden;
   }
   
+  .about-text{
+  font-size:45px;
+  }
+  .about-panel{
+    font-size:40px;
+  }
   .sidenav logotext{
     display: none;
   }
@@ -222,9 +250,9 @@
     top:0;
     text-align: center;
     margin:auto;
-    margin-left:20px;
+    margin-left:30px;
     transform: skewX(-3deg);
-    font-size:30px;
+    font-size:50px;
     margin-top:0px;
     overflow: hidden;
   }
@@ -235,8 +263,8 @@
 
   .sidenav logo img{
     float:left;
-    width:30px;
-    height:30px;
+    width:60px;
+    height:60px;
     margin-left:auto;
     margin-right:auto;
     margin-top:5px;
@@ -246,11 +274,11 @@
   .sidenav socials{
     float:right;
     top:0;
-    height:80px;
+    height:100px;
     bottom:0;
     right:0;
-    transform: scale(0.7);
-    margin-right:20px;
+    margin-top:30px;
+    margin-right:100px;
     margin-left:20px;
   }
   
@@ -269,6 +297,8 @@
 }
 
 .wide{
+
+  
   margin:0px;
   padding:0px;
   .sidenav {
@@ -279,6 +309,11 @@
     overflow: hidden;
   }
   
+  @media (max-width: 800px) or (max-device-width: 800px){
+    .sidenav{
+      transform: scale(160%, 160%)translate(185px, 0px);
+    }
+  }
   .sidenav logotext{
     display: none;
   }
